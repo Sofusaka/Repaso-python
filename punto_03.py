@@ -7,6 +7,7 @@ def primos(n):
     for i in range (2,n):
         if n%i==0:
             return False
+
     return True
 
     
@@ -16,16 +17,16 @@ try:
 
     primoslist=[]
     i=2
-    if N>1:
 
-        while True:
+
+    while True:
             if (primos(i)):
                     primoslist.append(i)
                     if(len(primoslist)==N): 
                         break 
             i=i+1
             
-        print(f"los primeros {N} números primos son : {primoslist}")
+    print(f"los primeros {N} números primos son : {primoslist}")
 
 except:
     print("Usted ha ingresado un valor que no es número entero.")
